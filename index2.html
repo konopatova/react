@@ -10,6 +10,30 @@
         <script type="text/babel">
 
 
+/*************************************************Работа со state********************************/
+
+
+
+class App extends React.Component {
+	constructor() {
+		super();
+
+		//Запишем данные в стейт:
+		this.state = {name: 'Настя', surname: 'Конопатова'};
+	}
+
+	//Выведем данные из стейта:
+	render() {
+		return <div>
+			имя: {this.state.name}, фамилия: {this.state.surname}
+		</div>;
+	}
+}
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);
 
 /**************************************************************************************
 class App extends React.Component {
