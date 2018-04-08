@@ -10,7 +10,143 @@
         <script type="text/babel">
 
 
-/************************************************Циклы*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************************************
+class App extends React.Component {
+	render() {
+		const arr = ['a', 'b', 'c', 'd', 'e'];
+
+		const list = arr.map(function(item, liNumber) {
+			return <li key={liNumber}>{item}</li>;
+		});
+
+		return <ul>
+			{list}
+		</ul>
+	}
+}
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);*/
+
+
+/**************************************************************************************
+class App extends React.Component {
+	render() {
+		const css = {
+			color: 'green',
+			border: '1px solid red',
+			borderRadius: '30px',
+			};
+		
+		return <div style={css}>
+		текст
+		</div>;
+	}
+}
+				
+	ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);	*/
+
+/**************************************************************************************		
+class App extends React.Component {
+	render() {
+		const str = 'block';
+		
+		return <div className={str}>
+		текст
+		</div>;
+	}
+}
+				
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);		*/		
+				
+/**************************************************************************************
+class App extends React.Component {
+	render() {
+		const attr = 'block';
+		
+		return <div id={attr}>
+		текст
+		</div>;
+	}
+}
+	
+				ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);	*/	
+				
+/**************************************************************************************					
+class App extends React.Component {
+	render() {
+		const text1 = <p>текст1</p>;
+		const text2 = <p>текст2</p>;
+		
+		return <div>
+			{text1}
+			<p>!!!</p>
+			{text2}
+		</div>;
+	}
+}
+
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);*/
+
+
+
+/************************************************Условие*************************************************/
+/*
+class App extends React.Component {
+	render() {
+		const show = false;
+		
+		if (show) {
+			var text = 'текст 1';
+		} else {
+			var text = 'текст 2';
+		}
+		
+		return <div>{text}</div>;
+	}
+}
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);
+*/
+
+
+/************************************************Циклы*************************************************/
 /*
 class App extends React.Component {
 	render() {
@@ -33,7 +169,7 @@ ReactDOM.render(
 */
 
 
-/******************************************Работа с CSS*/
+/******************************************Работа с CSS*************************************************/
 /*class App extends React.Component {
 	render() {
 		const str = 'tagged';
@@ -54,7 +190,7 @@ ReactDOM.render(
 
 
 
-/******************************************Выполнение JavaScript*/
+/******************************************Выполнение JavaScript*************************************************/
 /*class App extends React.Component {
 	render() {
 		const num1 = 3;
@@ -74,7 +210,7 @@ ReactDOM.render(
 
 
 
-/******************************************Вставка значений переменных*/
+/******************************************Вставка значений переменных*************************************************/
 /*
 class App extends React.Component {
 	render() {
@@ -118,7 +254,7 @@ ReactDOM.render(
 
 
 
-/******************************************Переменные*/
+/******************************************Переменные*************************************************/
 /*
 class App extends React.Component {
 	render() {
