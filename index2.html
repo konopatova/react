@@ -9,11 +9,31 @@
         <div id="root"> </div>
         <script type="text/babel">
 
+/*************************************************Работа с событиями********************************/
+
+class App extends React.Component {
+	showMessage() {
+		alert('Хей!');
+	}
+
+	render() {
+		return <div onClick={this.showMessage}>
+			нажми на меня
+		</div>;
+	}
+} 
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);
+
+
 
 /*************************************************Работа со state********************************/
 
 
-
+/*
 class App extends React.Component {
 	constructor() {
 		super();
@@ -33,7 +53,7 @@ class App extends React.Component {
 ReactDOM.render(
 	<App />,
 	document.getElementById('root')
-);
+);*/
 
 /**************************************************************************************
 class App extends React.Component {
